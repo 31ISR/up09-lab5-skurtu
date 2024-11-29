@@ -12,9 +12,55 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 h1, p {
     text-align: center;
+    
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
     
 }
