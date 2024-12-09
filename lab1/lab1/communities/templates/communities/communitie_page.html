@@ -1,0 +1,8 @@
+{% extends 'layout.html' %} {% block title %} {{ communitie.name }} {% endblock %}
+{% block content %}
+<section>
+    <h1>{{ communitie.name }}</h1>
+    <p>{{ communitie.date }}</p>
+    <p>{{ communitie.description }}</p>
+</section>
+{% endblock %}

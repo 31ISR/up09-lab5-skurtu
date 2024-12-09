@@ -13,8 +13,8 @@
             <ul>
                 <li><a href="/">Главная</a></li>
                 <li><a href="/about">Обо мне</a></li>
-                <li><a href="/posts">Посты</a></li>
-                <li><a href="/communities">Сообщества</a></li>
+                <li><a href="{% url 'posts:list' %}">Посты</a></li>
+                <li><a href="{% url 'communities:list' %}">Сообщества</a></li>
             </ul>
         </nav>
         <main>{% block content %} {% endblock %}</main>
