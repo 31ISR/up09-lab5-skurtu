@@ -1,13 +1,13 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-   New Communitie
+    New Communitie
 {% endblock %}
 
 {% block content %}
     <section>
         <h1>Новое сообщество</h1>
-        <form class="form-with-validation" action="{% url 'communities:new-communities' %}" method="post" enctype="multipart/form-data">
+        <form class="form-with-validation" action="{% url 'communities:new' %}" method="post" enctype="multipart/form-data">
             {% csrf_token %} 
             {{ form }}
             <button class="form-submit">Добавить сообщество</button>

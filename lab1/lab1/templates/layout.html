@@ -15,23 +15,23 @@
                 <li><a href="/about">Обо мне</a></li>
                 <li><a href="{% url 'posts:list' %}">Посты</a></li>
                 <li><a href="{% url 'communities:list' %}">Сообщества</a></li>
-                <li><a href="{% url 'users:register' %}">Зарегистрироваться</a></li>
-                <li><a href="{% url 'users:login' %}">Войти</a></li>
+                <!--<li><a href="{% url 'users:register' %}">Зарегистрироваться</a></li>
+                <li><a href="{% url 'users:login' %}">Войти</a></li>-->
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'posts:new-post' %}">Новый пост</a></li>
-                <li><a href="{% url 'communities:new-communities' %}">Новая группа</a></li>
+                <li><a href="{% url 'communities:new' %}">Новая группа</a></li>
 
                 <form class="logout" action="{% url 'users:logout' %}" method="post">
                     {% csrf_token %}
                     <button title="User Logout">Выйти</button>
                 </form>
                 {% else %}
-                    <a href="{% url 'users:register' %}">
+                    <li><a href="{% url 'users:register' %}">
                         Зарегистрироваться
-                    </a>
-                    <a href="{% url 'users:login' %}">
+                    </a></li>
+                    <li><a href="{% url 'users:login' %}">
                         Войти
-                    </a>
+                    </a></li>
                 {% endif %}
                 
             </ul>
