@@ -7,6 +7,16 @@
         <title>{% block title %} Приложение Django {% endblock %}</title>
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <script src="{% static 'js/script.js' %}" defer></script>
+        <style>
+            .logg{
+                background-color: white;
+                border-radius: 10px;
+                border: 2px solid pink;
+                width: 100px;
+                height: 30px;
+                margin-top: 2px;
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -23,7 +33,7 @@
 
                 <form class="logout" action="{% url 'users:logout' %}" method="post">
                     {% csrf_token %}
-                    <button title="User Logout">Выйти</button>
+                    <button class="logg" title="User Logout">Выйти</button>
                 </form>
                 {% else %}
                     <li><a href="{% url 'users:register' %}">
