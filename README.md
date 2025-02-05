@@ -14,18 +14,18 @@
 ## ▶ Установка и запуск
 ### Запуск локально
 **1. Клонировать репозиторий:**
-   git clone https://github.com/31ISR/up09-lab5-skurtu.git
-   cd up09-lab5-skurtu
+`git clone https://github.com/31ISR/up09-lab5-skurtu.git`
+`cd up09-lab5-skurtu`
 **2. Создать и активировать виртуальную среду (рекомендуется):**
-   source venv/bin/activate
+`source venv/bin/activate`
 **3. Установить зависимости:**
-   pip install -r requirements.txt
+`pip install -r requirements.txt`
 **4. Запустить сервер Django:**
-   cd lab1
-   cd lab1
-   python manage.py runserver
+`cd lab1`
+`cd lab1`
+`python manage.py runserver`
 **5. Открыть в браузере:**
-   localhost:8000/
+`localhost:8000/`
 
 ## Навигация
 - `/` - Главная страница
